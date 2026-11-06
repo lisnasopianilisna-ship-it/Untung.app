@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="description" content="Untungin - tips usaha, produktivitas, dan keuangan sederhana.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<title>Untungin</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#171719;--panel2:#202023;--gold:#e5bd62;--gold2:#f6df9b;--muted:#a7a7ad;--white:#f7f5ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:86px}
+header{padding:22px 20px 10px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:2px;font-size:22px;color:var(--gold)}.brand span{color:#fff}
+.avatar{width:40px;height:40px;border-radius:50%;border:1px solid #715b2d;background:#211d13;color:var(--gold);display:grid;place-items:center;font-weight:800}
+main{max-width:620px;margin:auto;padding:8px 16px 24px}
+.hello{margin:14px 4px 18px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:1.7px;font-weight:800}.hello h1{font-size:27px;line-height:1.15;margin:7px 0}.sub{color:var(--muted);font-size:14px;line-height:1.5}
+.hero{background:linear-gradient(135deg,#292216,#171512 65%,#111);border:1px solid #5b4926;border-radius:20px;padding:20px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:150px;height:150px;border:1px solid #80642c;border-radius:50%;right:-50px;top:-50px;box-shadow:0 0 0 18px #e5bd6208,0 0 0 38px #e5bd6205}
+.hero h2{font-size:21px;margin:0 0 8px;max-width:260px}.hero p{font-size:13px;color:#d2c9b4;max-width:275px;line-height:1.5;margin:0 0 16px}.pill{display:inline-block;background:var(--gold);color:#1b160b;padding:9px 14px;border-radius:30px;font-size:12px;font-weight:800}
+.ad{margin:16px 0;background:#131315;border:1px dashed #5b513c;border-radius:14px;min-height:76px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:#8d887e;font-size:11px;line-height:1.5}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin:24px 3px 12px}.section-head h3{margin:0;font-size:17px}.section-head small{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.card{background:var(--panel);border:1px solid #29292d;border-radius:16px;padding:15px;min-height:125px}
+.symbol{width:35px;height:35px;border-radius:11px;background:#302717;color:var(--gold);display:grid;place-items:center;font-size:18px;margin-bottom:10px}
+.card b{font-size:14px}.card p{font-size:12px;color:var(--muted);line-height:1.45;margin:5px 0 0}
+.article{background:var(--panel);border:1px solid #29292d;border-radius:15px;padding:15px;margin-bottom:10px;display:block;width:100%;text-align:left;color:inherit}
+.article small{color:var(--gold);font-size:10px;letter-spacing:1px;font-weight:800}.article b{display:block;margin:5px 0;font-size:14px}.article span{color:var(--muted);font-size:12px}
+nav{position:fixed;bottom:0;left:0;right:0;background:#111113f2;backdrop-filter:blur(12px);border-top:1px solid #29292d;display:flex;justify-content:center;padding:10px max(10px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom));z-index:5}
+.navinner{width:min(620px,100%);display:flex;justify-content:space-around}.navbtn{background:none;border:0;color:#85858c;font-size:10px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:3px 16px}.navbtn strong{font-size:19px;font-weight:500}.navbtn.active{color:var(--gold)}
+.page{display:none}.page.active{display:block}
+.back{border:0;background:none;color:var(--gold);font-size:13px;padding:8px 0}.detail{background:var(--panel);border-radius:16px;padding:18px;line-height:1.7;color:#d9d7d0;font-size:14px}.detail h2{color:#fff;font-size:21px;line-height:1.3}.detail h3{color:var(--gold);font-size:16px;margin-bottom:4px}
+.profilebox{background:var(--panel);border:1px solid #29292d;border-radius:16px;padding:18px;margin-top:14px}
+footer{text-align:center;color:#696970;font-size:10px;padding:20px 0}
+@media(min-width:560px){main{padding-left:22px;padding-right:22px}.hero{padding:26px}.hello h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header><div class="brand">UNTUN<span>GIN</span></div><div class="avatar">U</div></header>
+<main>
+<section id="home" class="page active">
+  <div class="hello"><div class="eyebrow">BELAJAR • BERTUMBUH • BERKEMBANG</div><h1>Halo, selamat datang!</h1><div class="sub">Temukan ide sederhana untuk mengelola uang dan mengembangkan usaha.</div></div>
+  <div class="hero"><div class="eyebrow">MULAI DARI LANGKAH KECIL</div><h2>Pengetahuan hari ini, peluang esok hari.</h2><p>Baca panduan praktis seputar usaha kecil, kebiasaan produktif, dan keuangan sehari-hari.</p><span class="pill" onclick="showPage('learn')">Jelajahi artikel →</span></div>
+  <div class="ad">RUANG IKLAN<br><b>Slot iklan Untungin</b><br>Belum aktif — perlu integrasi AdMob dan persetujuan akun.</div>
+  <div class="section-head"><h3>Jelajahi kategori</h3><small>UNTUNGIN</small></div>
+  <div class="cards">
+    <div class="card" onclick="filterArticles('Usaha')"><div class="symbol">✦</div><b>Ide usaha</b><p>Inspirasi memulai usaha kecil.</p></div>
+    <div class="card" onclick="filterArticles('Keuangan')"><div class="symbol">◈</div><b>Keuangan</b><p>Atur uang dengan lebih bijak.</p></div>
+    <div class="card" onclick="filterArticles('Produktivitas')"><div class="symbol">⌁</div><b>Produktivitas</b><p>Bangun kebiasaan yang berguna.</p></div>
+    <div class="card" onclick="filterArticles('Digital')"><div class="symbol">◎</div><b>Dunia digital</b><p>Manfaatkan alat digital sederhana.</p></div>
+  </div>
+  <div class="section-head"><h3>Artikel pilihan</h3><small onclick="showPage('learn')">Lihat semua</small></div>
+  <button class="article" onclick="openArticle(0)"><small>USAHA • 4 MENIT</small><b>Mulai usaha kecil dengan modal terbatas</b><span>Langkah awal yang realistis untuk pemula.</span></button>
+  <button class="article" onclick="openArticle(1)"><small>KEUANGAN • 3 MENIT</small><b>Cara sederhana mencatat pemasukan dan pengeluaran</b><span>Kenali arus uang agar lebih terarah.</span></button>
+</section>
+<section id="learn" class="page">
+  <div class="hello"><div class="eyebrow">PUSAT PENGETAHUAN</div><h1>Artikel Untungin</h1><div class="sub">Panduan singkat yang bisa langsung dipraktikkan.</div></div>
+  <div id="articleList"></div>
+</section>
+<section id="profile" class="page">
+  <div class="hello"><div class="eyebrow">AKUN</div><h1>Profil</h1><div class="sub">Informasi aplikasi Untungin.</div></div>
+  <div class="profilebox"><div class="brand">UNTUN<span>GIN</span></div><p class="sub">Versi 1.0 • Aplikasi edukasi ringan</p><p class="sub">Untungin menyediakan bacaan edukatif. Aplikasi ini tidak menjanjikan penghasilan atau keuntungan finansial.</p></div>
+  <div class="profilebox"><b>Kebijakan & bantuan</b><p class="sub">Email bantuan: isi-alamat-email-kamu@example.com</p><p class="sub">Sebelum dipublikasikan, ganti alamat email contoh dan tambahkan halaman kebijakan privasi yang sesuai.</p></div>
+</section>
+<section id="detail" class="page">
+  <button class="back" onclick="showPage('learn')">← Kembali ke artikel</button>
+  <div class="detail" id="detailContent"></div>
+</section>
+<footer>UNTUNGIN © 2026 • Gunakan informasi dengan bijak.</footer>
+</main>
+<nav><div class="navinner">
+<button class="navbtn active" data-page="home" onclick="showPage('home')"><strong>⌂</strong>Beranda</button>
+<button class="navbtn" data-page="learn" onclick="showPage('learn')"><strong>▤</strong>Artikel</button>
+<button class="navbtn" data-page="profile" onclick="showPage('profile')"><strong>◉</strong>Profil</button>
+</div></nav>
+<script>
+const articles=[
+{cat:'Usaha',time:'4 MENIT',title:'Mulai usaha kecil dengan modal terbatas',desc:'Langkah awal yang realistis untuk pemula.',body:`<h2>Mulai usaha kecil dengan modal terbatas</h2><p>Memulai usaha tidak selalu harus menyewa tempat atau membeli banyak stok. Mulailah dari masalah sederhana yang dialami orang di sekitar.</p><h3>1. Pilih satu kebutuhan</h3><p>Amati kebutuhan yang sering muncul, misalnya makanan rumahan, jasa mengetik, atau bantuan mengelola katalog produk.</p><h3>2. Uji minat sebelum mengeluarkan uang</h3><p>Buat contoh sederhana, tunjukkan kepada calon pembeli, lalu tanyakan apakah mereka benar-benar bersedia membayar. Jangan menganggap pujian sebagai bukti permintaan.</p><h3>3. Hitung biaya dan waktu</h3><p>Catat biaya bahan, ongkos kirim, biaya platform, dan waktu pengerjaan. Tentukan harga yang masih memberi keuntungan wajar.</p><h3>4. Mulai kecil dan evaluasi</h3><p>Coba satu penawaran terlebih dahulu. Pelajari pertanyaan dan keberatan calon pembeli sebelum memperbesar usaha.</p><p><b>Ingat:</b> tidak ada usaha yang menjamin keuntungan. Uji ide secara hati-hati.</p>`},
+{cat:'Keuangan',time:'3 MENIT',title:'Cara sederhana mencatat pemasukan dan pengeluaran',desc:'Kenali arus uang agar lebih terarah.',body:`<h2>Catat pemasukan dan pengeluaran</h2><p>Pencatatan sederhana membantu kamu mengetahui ke mana uang pergi. Gunakan buku catatan atau spreadsheet di ponsel.</p><h3>Catat setiap transaksi</h3><p>Tulis tanggal, keterangan, uang masuk, dan uang keluar. Lakukan segera setelah transaksi agar tidak lupa.</p><h3>Pisahkan kebutuhan dan keinginan</h3><p>Kelompokkan pengeluaran seperti makan, transportasi, tagihan, hiburan, dan belanja impulsif.</p><h3>Periksa setiap minggu</h3><p>Lihat kategori yang paling besar. Pilih satu pengeluaran yang bisa dikurangi tanpa mengganggu kebutuhan pokok.</p>`},
+{cat:'Produktivitas',time:'3 MENIT',title:'Membangun kebiasaan produktif selama 15 menit',desc:'Mulai dari rutinitas kecil yang konsisten.',body:`<h2>Kebiasaan produktif 15 menit</h2><p>Pilih satu tugas penting dan kerjakan selama 15 menit tanpa berpindah aplikasi.</p><h3>Buat target yang jelas</h3><p>Ubah “belajar bisnis” menjadi “mencatat tiga masalah calon pelanggan”. Target kecil lebih mudah dimulai.</p><h3>Kurangi gangguan</h3><p>Letakkan ponsel pada mode senyap atau tutup aplikasi yang tidak dibutuhkan.</p><h3>Ulangi dan evaluasi</h3><p>Catat apa yang selesai. Konsistensi lebih penting daripada membuat rencana yang terlalu rumit.</p>`},
+{cat:'Digital',time:'4 MENIT',title:'Memanfaatkan alat digital gratis untuk usaha',desc:'Gunakan alat sederhana untuk bekerja lebih rapi.',body:`<h2>Alat digital gratis untuk usaha</h2><p>Mulai dengan alat yang benar-benar dibutuhkan. Kalender membantu mengatur jadwal, spreadsheet untuk mencatat pesanan, dan aplikasi desain gratis untuk membuat materi promosi.</p><h3>Jaga data pelanggan</h3><p>Mintalah izin sebelum menyimpan atau mengirim promosi. Jangan membagikan nomor atau informasi pelanggan tanpa persetujuan.</p><h3>Ukur hasil</h3><p>Catat pertanyaan masuk, penawaran yang dikirim, dan transaksi yang terjadi. Gunakan data tersebut untuk memperbaiki layanan.</p>`}
+];
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo(0,0)}
+function renderArticles(list=articles){document.getElementById('articleList').innerHTML=list.map(a=>`<button class="article" onclick="openArticle(${articles.indexOf(a)})"><small>${a.cat.toUpperCase()} • ${a.time}</small><b>${a.title}</b><span>${a.desc}</span></button>`).join('')}
+function filterArticles(cat){showPage('learn');renderArticles(articles.filter(a=>a.cat===cat))}
+function openArticle(i){document.getElementById('detailContent').innerHTML=articles[i].body;showPage('detail')}
+renderArticles();
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}
+</script>
+</body></html>
